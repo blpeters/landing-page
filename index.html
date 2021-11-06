@@ -5,57 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dunder-Mifflin Paper</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Header Logo</h1>
-        <ul>
-            <li><a href="#">header link one</a></li>
-            <li><a href="#">header link two</a></li>
-            <li><a href="#">header link three</a></li>
-        </ul>
+        <div class="header-wrapper">
+            <a href="#"><h1>Dunder-Mifflin Paper Company</h1></a>
+            <ul class="nav">
+                <li><a href="#">Bears</a></li>
+                <li><a href="#">Beets</a></li>
+                <li><a href="#">Battlestar Galactica</a></li>
+            </ul>
+        </div>
     </header>
-    <div class="intro">
-        <div class="wrapper">
-            <h2>Pennsylvania's Premier Paper Provider</h2>
-            <p>serving Scranton since 2005 despite our questionable business management.</p>
-            <button>Meet Our Team!</button>
-            <img src="img/colors_and_stuff.png" alt="image description">
+    <div class="section section-intro">
+        <div class="intro-wrapper">
+            <div class="intro-text">
+                <h2>Pennsylvania's Premier Paper Provider</h2>
+                <p>Serving Scranton since 2005 despite our questionable management practices.</p>
+                <button>Meet Our Team!</button>
+            </div>
+            <img class="intro-img" src="img/paper.jpg" alt="image description">
         </div>
     </div>
-    <div class="img-section">
-        <h3>Some random information.</h3>
-        <div class="wrapper">
+    <div class="section section-img">
+        <h3>Our Products</h3>
+        <div class="gallery-wrapper">
             <div>
-                <img class="img-gallery" src="img/paper.jpg" alt="rolls of paper">
-                <caption>Paper!</caption>
+                <div class="img-frame">
+                    <img class="img-gallery" src="img/paper.jpg" alt="rolls of paper">
+                </div>
+                <p class="caption">Paper!</p>
             </div>
             <div>
-                <img class="img-gallery" src="img/pens.jpg" alt="assorted pens on table">
-                <caption>Pens</caption>
+                <div class="img-frame pens">
+                    <img class="img-gallery" src="img/pens.jpg" alt="assorted pens on table">
+                </div>
+                <p class="caption">Pens</p>
             </div>
             <div>
-                <img class="img-gallery" src="img/postit.jpg" alt="stack of post-it notes">
-                <caption>Post-Its</caption>
+                <div class="img-frame">
+                    <img class="img-gallery" src="img/postit.jpg" alt="stack of post-it notes">
+                </div>
+                <p class="caption">Post-Its</p>
             </div>
             <div>
-                <img class="img-gallery" src="img/beets.jpg" alt="bushel of red beets with stems">
-                <caption>Beets!</caption>
+                <div class="img-frame">
+                    <img class="img-gallery" src="img/beets.jpg" alt="bushel of red beets with stems">
+                </div>
+                <p class="caption">Beets!</p>
             </div>
         </div>
     </div>
-    <div class="quote-section">
-        <blockquote>You miss 100% of the shots you don't take</blockquote>
-        <p><strong>Wayne Gretsky   </strong></p>
-        <p><strong>Michael Scott</strong></p>
+    <div class="section section-quote">
+        <blockquote><em>You miss 100% of the shots you don't take</em></blockquote>
+        <p><strong>-Wayne Gretsky</strong></p>
+        <p><strong>-Michael Scott</strong></p>
     </div>
-    <div class="signup-section">
-        <div class="card">
+    <div class="section section-signup">
+        <div class="signup-card">
             <div class="wrapper">
                 <h3>Want to join our team?</h3>
                 <p>Can't imagine that's a great idea but apply right over there!</p>
             </div>
-            <button>Send in your application!?!</button>
+            <button id="apply">Send in your application!?!</button>
         </div>
     </div>
     <footer>
