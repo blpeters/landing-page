@@ -143,6 +143,7 @@ a {
 .intro-text {
     height: 100%;
     color: #E5E7EB;
+    padding-right:20px;
 }
 
 h2 {
@@ -217,25 +218,75 @@ h3 {
 
 .section-quote {
     background-color: #E5E7EB;
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
+.quote-wrapper {
+    width: clamp(300px, 60%, 1000px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+q {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 2rem;
+    width: 100%;
+    padding: .5rem 0;
+    text-align: center;
+}
+
+.author {
+    font-weight: 700;
+    text-align: end;
+    width: 100%;
+    padding: .5rem 0;
+    font-size: 2rem;
+}
+
+
+.author-main {
+    font-size: 3rem;
+}
+
+
 /* SIGNUP SECTION */
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 900;
+
+}
+.join {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    padding-right: 50px;
+}
 
 .signup-card {
     background: #3882F6;
     padding: 2rem 5rem;
     border-radius: .5rem;
     color: white;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    justify-content: space-between;
 }
 
 #apply {
     color: white;
     border: 2px solid white;
     border-radius: .5rem;
+    height: 100px;
+    padding: 1rem;
 }
-
-
 
 /* FOOTER */
 footer {
